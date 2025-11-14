@@ -77,9 +77,10 @@ margin: 0px auto;
   border: 1px solid #e6e9ef;
   font-weight: 600;
   font-size: 14px;
+  cursor: pointer;
 }
 
-.chip:active {
+.chip:hover {
   transform: translateY(1px);
 }
 
