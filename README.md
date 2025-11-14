@@ -2,6 +2,8 @@
 
 A minimal, single-page demo that shows how to use React (UMD build) directly inside an HTML file. The project demonstrates a light, Vercel-like landing layout with a centered hero, navigation, avatar (Dicebear), and a small features section.
 
+<img width="1620" height="742" alt="image" src="https://github.com/user-attachments/assets/ce071000-5875-42db-b941-8c8e9ebb0f1d" />
+
 > [Deployed Link]()
 > [Github Link](https://github.com/fasakinhenry/react-demo-html)
 
