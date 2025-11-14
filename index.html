@@ -37,26 +37,56 @@
           }
 
           return (
-            <main className="container">
-              <header className="site-header">
-                <Header title="Develop. Preview. Ship." />
-                <p className="lead">A tiny demo showing lightweight UI and responsive layout — minimal, fast, and clear.</p>
-              </header>
-
-              <section className="content">
-                <ul className="names-list">
-                  {names.map((name) => (
-                    <li className="chip" key={name}>
-                      {name}
-                    </li>
-                  ))}
-                </ul>
-
-                <div className="cta-row">
-                  <button className="btn-like" onClick={handleClick}>Like ({likes})</button>
+            <div className="page">
+              <nav className="site-nav">
+                <div className="nav-inner">
+                  <div className="logo">▲ Vercel</div>
+                  <div className="nav-links">
+                    <a href="#">Products</a>
+                    <a href="#">Docs</a>
+                    <a href="#">Pricing</a>
+                  </div>
+                  <div className="nav-cta">
+                    <a className="nav-btn" href="#">Contact</a>
+                    <img className="profile-img" src="https://api.dicebear.com/7.x/identicon/png?seed=fasakinhenry" alt="Profile" />
+                  </div>
                 </div>
-              </section>
-            </main>
+              </nav>
+
+              <main className="container">
+                <header className="site-header">
+                  <Header title="Develop. Preview. Ship." />
+                  <p className="lead">A tiny demo showing lightweight UI and responsive layout — minimal, fast, and clear.</p>
+                </header>
+
+                <section className="content">
+                  <ul className="names-list">
+                    {names.map((name) => (
+                      <li className="chip" key={name}>
+                        {name}
+                      </li>
+                    ))}
+                  </ul>
+
+                  <div className="cta-row">
+                    <button className="btn-like" onClick={handleClick}>Click to Like ({likes})</button>
+                  </div>
+                </section>
+
+                <hr className="site-divider" />
+
+                <section className="feature-grid">
+                  <div className="feature">
+                    <h3>Next.js</h3>
+                    <p className="muted">Latest updates, docs and guides from the team.</p>
+                  </div>
+                  <div className="feature">
+                    <h3>Ship AI</h3>
+                    <p className="muted">Discover how developers are using AI to build faster.</p>
+                  </div>
+                </section>
+              </main>
+            </div>
           );
         }
 
