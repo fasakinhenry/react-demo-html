@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@400;600;700&display=swap');
 
 * {
   box-sizing: border-box;
@@ -35,9 +34,10 @@ body {
 .site-header h1 {
   margin: 0 0 10px 0;
   font-size: clamp(34px, 6vw, 64px);
-  font-weight: 700;
-  letter-spacing: -0.02em;
+  font-weight: 600;
   color: #0b1220;
+  font-family: 'Geist', sans-serif;
+  font-size: 48px
 }
 
 .lead {
@@ -173,7 +173,7 @@ margin: 0px auto;
   cursor: pointer;
   background: #0b1220;
   color: #fff;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Geist', sans-serif;
   font-weight: medium;
   font-size: 15px;
   box-shadow: 0 8px 22px rgba(11, 18, 32, 0.08);
