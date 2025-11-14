@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>React Demo in HTML</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div id="app"></div>
@@ -20,32 +24,41 @@
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <script type="text/jsx">
       function Header({ title }) {
-        return <h1>{title}</h1>
+        return <h1 className="site-title">{title}</h1>
       };
 
-      function HomePage() {
+        function HomePage() {
           const names = ["Ada Lovelace", "Grace Hopper", "Margaret Hamilton"];
 
           const [likes, setLikes] = React.useState(0);
 
           function handleClick() {
-              setLikes(likes + 1);
+            setLikes(likes + 1);
           }
 
           return (
-              <div>
-                  <Header title="Develop. Preview. Ship." />
-                  <ul>
-                      {names.map((name) => (
-                          <li key={name}>
-                              {name}
-                          </li>
-                      ))}
-                  </ul>
-                  <button onClick={handleClick}>Like ({likes})</button>
-              </div>
+            <main className="container">
+              <header className="site-header">
+                <Header title="Develop. Preview. Ship." />
+                <p className="lead">A tiny demo showing lightweight UI and responsive layout — minimal, fast, and clear.</p>
+              </header>
+
+              <section className="content">
+                <ul className="names-list">
+                  {names.map((name) => (
+                    <li className="chip" key={name}>
+                      {name}
+                    </li>
+                  ))}
+                </ul>
+
+                <div className="cta-row">
+                  <button className="btn-like" onClick={handleClick}>Like ({likes})</button>
+                </div>
+              </section>
+            </main>
           );
-      }
+        }
 
         const domNode = document.getElementById('app');
         const root = ReactDOM.createRoot(domNode);
