@@ -4,7 +4,8 @@ A minimal, single-page demo that shows how to use React (UMD build) directly ins
 
 <img width="1620" height="742" alt="image" src="https://github.com/user-attachments/assets/ce071000-5875-42db-b941-8c8e9ebb0f1d" />
 
-> [Deployed Link]()
+> [Deployed Link](https://react-demo-html.vercel.app)
+
 > [Github Link](https://github.com/fasakinhenry/react-demo-html)
 
 Live preview: Open `index.html` in your browser
