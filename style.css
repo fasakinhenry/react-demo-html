@@ -209,7 +209,10 @@ body {
     justify-content: flex-start;
   }
   .btn-like {
-    width: auto;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
   }
 }
 
